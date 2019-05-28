@@ -27,7 +27,7 @@ class MyEncryption:
         self.password = password
         self.UTF8password = password.encode('UTF-8')
 
-    def encryipt(self, event, salt, destdir):
+    def encrypt(self, event, salt, destdir):
         """
         a method that calculates HKDF key based on salt and password
         encrypts file event.src_path
@@ -44,7 +44,7 @@ class MyEncryption:
         # add code for encryption encrypt(event, key)
         # add code to writing file into destdir
 
-    def decryipt(self, event, salt, destdir):
+    def decrypt(self, event, salt, destdir):
         """
         a method that calculates HKDF key based on salt and password
         decrypts file event.src_path
